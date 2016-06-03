@@ -3,6 +3,7 @@
 }
 
 h1{
-    font-family: Arial;
-    font-size: 40px;
+    margin: 20px 0px;
+    border: 1px solid red;
+    padding: 5px;
 }
