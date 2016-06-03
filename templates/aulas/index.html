@@ -1,10 +1,29 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
-    <meta charset="utf-8">
     <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="{% static 'aulas/img/favicon.png' %}">
         <title>Olá mundo em HTML</title>
+        <link rel="stylesheet" href="{% static 'aulas/css/base.css' %}">
     </head>
     <body>
-        <h1>Olá! Bem vindo!</h1>
+        <div id="header">
+            <h1>Trinopolo - Curso JS</h1>
+        </div>
+        <div id="menu">
+            <h3>Menu de Navegação</h3>
+            <ul>
+                <li>Sobre o Curso</li>
+                <li>Local e horários</li>
+                <li>Conteúdo programático</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Sobre o curso</h2>
+            <p>Curso de JS promovido pelo Trinopolo de Caxias do Sul</p>
+        </div>
     </body>
+
 </html>
