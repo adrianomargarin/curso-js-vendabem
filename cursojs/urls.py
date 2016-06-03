@@ -22,6 +22,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^aula-01/$', TemplateView.as_view(template_name="aulas/index.html"),
         name='aula-01'),
+    url(r'^aula-01/bootstrap$',
+        TemplateView.as_view(template_name="aulas/index-bootstrap.html"),
+        name='aula-01'),
     url(r'$^', TemplateView.as_view(template_name="index.html"),
         name='index')
 ]
