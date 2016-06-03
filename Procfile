@@ -1,0 +1,1 @@
+web: gunicorn soda.wsgi --log-file -
