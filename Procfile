@@ -1,1 +1,1 @@
-web: gunicorn soda.wsgi --log-file -
+web: gunicorn cursojs.wsgi --log-file -
