@@ -70,3 +70,4 @@ target/
 *.sublime-*
 env
 *.sqlite3
+.idea/
