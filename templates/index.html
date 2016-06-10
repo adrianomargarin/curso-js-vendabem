@@ -5,11 +5,20 @@
     <head>
         <meta charset="utf-8">
         <link rel="shortcut icon" href="{% static 'aulas/img/favicon.png' %}">
-        <title>Trinopolo - Curso JS</title>
+        <title>{% block title %}Trinopolo - Curso JS{% endblock title %}</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'aulas/css/index.css' %}">
+
+        {% block css %}{% endblock css %}
+        {% block js %}{% endblock js %}
     </head>
     <body>
         {% for url in urls %}
             <p><a href="{% url url %}">{{ url}}</a></p>
         {% endfor %}
+        <div class="container">
+            {% block body %}{% endblock body %}
+        </div>
     </body>
 </html>
