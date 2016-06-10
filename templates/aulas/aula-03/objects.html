@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block title %}Orientação a Objetos{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'aulas/js/aula-03/objects.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        {% include "aulas/console.html" %}
+    </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block title %}Pesquisa{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'aulas/js/aula-03/search.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="form-inline">
+            <div class="form-group">
+                <input type="search" class="form-control" id="id_search">
+            </div>
+            <button type="submit" id="id_submit" class="btn btn-primary">Pesquisar</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="search">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia consectetur, reiciendis quo sunt facere asperiores pariatur tenetur similique quidem. Omnis quaerat, reprehenderit ducimus eum blanditiis vitae quisquam beatae minima molestias?</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati soluta reprehenderit ab suscipit iste dolorum culpa laborum facere doloremque consequatur tenetur animi, vero provident aliquid libero, quos perferendis. Fuga, repellendus!</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quae, neque dignissimos, ex libero maxime perferendis doloribus officia commodi distinctio inventore rem facilis rerum fuga magni iusto minima a fugit!</p>
+        </div>
+    </div>
+{% endblock %}

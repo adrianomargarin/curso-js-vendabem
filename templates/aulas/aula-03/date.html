@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block title %}Datas{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'aulas/js/aula-03/date.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        {% include "aulas/console.html" %}
+    </div>
+{% endblock %}

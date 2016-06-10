@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block title %}Pesquisa{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'aulas/js/puremask.js' %}"></script>
+    <script type="text/javascript" src="{% static 'aulas/js/aula-03/calculator-dates.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-md-4">
+            <label>Data 1</label>
+            <input type="text" class="form-control" name="date_1", id="id_date_1" data-mask="aaaa/mm/dd hh:mm">
+        </div>
+        <div class="col-md-4">
+            <label>Data 2</label>
+            <input type="text" class="form-control" name="date_2", id="id_date_2" data-mask="aaaa/mm/dd hh:mm">
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <button class="btn btn-primary" name="calculator" id="id_calculator">Calcular</button>
+        </div>
+    </div>
+{% endblock %}
