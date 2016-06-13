@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block title %}Orientação a Objetos{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'aulas/js/aula-04/window-actions.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="col-md-12">
+        <input type="button" class="btn btn-danger" value="Excluir" id="id_delete">
+    </div>
+{% endblock %}

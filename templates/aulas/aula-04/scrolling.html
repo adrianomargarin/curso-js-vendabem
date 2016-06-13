@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block title %}Orientação a Objetos{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'aulas/css/aula-04/scrolling.css' %}">
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'aulas/js/aula-04/scrolling.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+
+    <div class="col-md-6">
+        <input type="button" class="btn btn-primary" id="id-start" value="Iniciar">
+        <input type="button" class="btn btn-danger" id="id-stop" value="Parar">
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-md-6 news" id="id-news">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis consequuntur quisquam beatae molestias ullam animi, illum eum. Repellendus obcaecati odit quod rem illo laborum assumenda ipsum tenetur dolor eligendi. Debitis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ex distinctio, consectetur? Possimus molestias, excepturi architecto ex rem dolorem expedita nobis beatae, exercitationem doloribus obcaecati. Voluptates dolores, unde adipisci deserunt!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio neque consequatur, amet quas eveniet, harum voluptatibus. Quas incidunt perspiciatis reprehenderit magni, nihil adipisci modi, praesentium maiores aspernatur quibusdam reiciendis quae!</p>
+    </div>
+{% endblock %}

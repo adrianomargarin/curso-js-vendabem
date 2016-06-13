@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block title %}Orientação a Objetos{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'aulas/js/aula-04/events.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    {% include "aulas/console.html" %}
+
+    <body onload="pageLoaded()">
+        <h1 onmouseenter="highlight(this, true)" onmouseleave="highlight(this, false)">Bem vindo!</h1>
+
+        <a href="http://www.google.com" onclick="goodbye()">Google</a>
+
+        <form method="POST" onsubmit="return validate()">
+            {% csrf_token %}
+            <input type="text" name="name" id="id_name" class="form-control" onkeyup="uppercase(this)">
+            <input type="submit" class="btn btn-success" value="Save">
+        </form>
+    </body>
+{% endblock %}

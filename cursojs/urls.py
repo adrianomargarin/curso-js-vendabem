@@ -66,5 +66,21 @@ urlpatterns = [
         TemplateView.as_view(template_name='aulas/aula-03/objects.html'),
         name='aula-03-objects'),
 
+    url(r'^aula-04/events$',
+        TemplateView.as_view(template_name='aulas/aula-04/events.html'),
+        name='aula-04-events'),
+    url(r'^aula-04/clinic$',
+        TemplateView.as_view(template_name='aulas/aula-04/clinic.html'),
+        name='aula-04-clinic'),
+    url(r'^aula-04/window-actions$',
+        TemplateView.as_view(template_name='aulas/aula-04/window-actions.html'),
+        name='aula-04-window-actions'),
+    url(r'^aula-04/scrolling$',
+        TemplateView.as_view(template_name='aulas/aula-04/scrolling.html'),
+        name='aula-04-scrolling'),
+    url(r'^aula-04/cookies$',
+        TemplateView.as_view(template_name='aulas/aula-04/cookies.html'),
+        name='aula-04-cookies'),
+
     url(r'^$', Home.as_view(), name='index'),
 ]

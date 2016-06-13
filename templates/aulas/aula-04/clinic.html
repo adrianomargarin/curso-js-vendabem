@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block title %}Clinica{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'aulas/css/aula-04/clinic.css' %}">
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'aulas/js/aula-04/clinic.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="col-md-6">
+        <h3>Adicionar na fila de atendimento</h3>
+
+        <form method="POST" id="id_form">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" class="form-control" name="name" id="id_name">
+                <p id="id_error"></p>
+            </div>
+            <input type="button" class="btn btn-primary" id="id_add" value="Adicionar">
+        </form>
+    </div>
+    <div class="col-md-6">
+        <h3>Fila de atendimento</h3>
+        <p id="id_error_queue" class="hidden">Não existem pacientes para serem atendidos!</p>
+        <ul id="id_queue"></ul>
+
+        <input type="button" class="btn btn-success" id="id_next" value="Próximo">
+    </div>
+{% endblock %}
