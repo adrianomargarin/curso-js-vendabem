@@ -82,5 +82,21 @@ urlpatterns = [
         TemplateView.as_view(template_name='aulas/aula-04/cookies.html'),
         name='aula-04-cookies'),
 
+    url(r'aula-05/window/',
+        TemplateView.as_view(template_name='aulas/aula-05/window.html'),
+        name='aula-05-window'),
+    url(r'aula-05/window-new-page/',
+        TemplateView.as_view(template_name='aulas/aula-05/new-page.html'),
+        name='aula-05-new-page'),
+    url(r'aula-05/local-storage/',
+        TemplateView.as_view(template_name='aulas/aula-05/local-storage.html'),
+        name='aula-05-local-storage'),
+    url(r'aula-05/jquery/',
+        TemplateView.as_view(template_name='aulas/aula-05/jquery.html'),
+        name='aula-05-jquery'),
+    url(r'aula-05/jquery-gallery/',
+        TemplateView.as_view(template_name='aulas/aula-05/jquery-gallery.html'),
+        name='aula-05-jquery-gallery'),
+
     url(r'^$', Home.as_view(), name='index'),
 ]

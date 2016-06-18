@@ -1,0 +1,64 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block title %}Aula 05 - Seletores{% endblock %}
+
+{% block css %}{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'aulas/js/aula-05/jquery.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+
+    <div class="col-md-6">
+        <h1>Bem vindo JQuery!</h1>
+
+        <input type="text" name="email" id="id_email" class="form-control">
+
+        <h3>Primeiro Parágrafo</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aspernatur nam molestias deserunt, doloribus optio tenetur temporibus molestiae dolore quisquam magnam eveniet nemo ad fugiat officiis illo eos modi! Tempore!
+        </p>
+
+        <h3>Segundo Parágrafo</h3>
+        <p class="red">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores laborum rerum neque dicta tempora voluptatum repellat nulla, consequuntur nihil eaque, facilis architecto! Magni voluptatibus voluptate repellat ipsum, possimus doloremque tenetur?
+        </p>
+    </div>
+    <div class="col-md-6">
+        <table class="table table-bordered" id="id_table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Adriano Margarin</td>
+                    <td>adriano@example.com</td>
+                </tr>
+                <tr>
+                    <td>Pedro da Silva</td>
+                    <td>pedro@example.com</td>
+                </tr>
+                <tr>
+                    <td>João de Souza</td>
+                    <td>joao@example.com</td>
+                </tr>
+                <tr>
+                    <td>José Maria</td>
+                    <td>jose@example.com</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+{% endblock %}

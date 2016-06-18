@@ -1,0 +1,42 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block title %}Aula 05 - Seletores{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'aulas/css/aula-05/aula-05.css' %}">
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'aulas/js/aula-05/jquery-gallery.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Você selecionou: <span id="id-amount"></span> imagens.</p>
+            <h2>Imagem Selecionadas</h2>
+            <ul id="selected-images-list">
+
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 img-gallery">
+            <h1>Miniaturas</h1>
+            <div class="col-lg-2">
+                <img src="https://www.webreflection.co.uk/img/html5.svg" title="HTML5">
+            </div>
+            <div class="col-lg-2">
+                <img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" title="JS">
+            </div>
+            <div class="col-lg-2">
+                <img src="http://www.conhecimentodigital.com.br/admin/wp-content/uploads/2013/11/css3.jpg" title="CSS3">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h1>Imagem ampliada</h1>
+            <img src="" id="larger-image">
+        </div>
+    </div>
+{% endblock %}

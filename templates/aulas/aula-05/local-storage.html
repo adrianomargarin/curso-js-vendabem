@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block title %}Aula 05{% endblock %}
+
+{% block css %}{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'aulas/js/aula-05/local-storage.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-md-6">
+            <p>Local Storage</p>
+            <input type="text" class="form-control" name="local_storage" id="id_local_storage">
+            <button type="button" id="load_local_storage" class="btn btn-primary">Carregar</button>
+        </div>
+    </div>
+{% endblock %}
